@@ -1,0 +1,34 @@
+{
+    "id": "hybrid",
+    "version": 8,
+    "zoom": 1,
+    "name": "HERE Hybrid",
+    "metadata": {
+    },
+    "sources": {
+        "satellite": {
+            "type": "raster",
+            "tiles": [
+                "https://2.aerial.maps.ls.hereapi.com/maptile/2.1/maptile/newest/hybrid.day/{z}/{x}/{y}/256/png8?apiKey=LF62UDMv0QGJMH6Z_YScIaHJ1CxCyTiBYFpPzNxZtzI"
+            ],
+            "tileSize": 256
+        }
+    },
+    "layers": [
+        {
+            "id": "satellite",
+            "type": "raster",
+            "paint": {
+                "raster-opacity": 1
+            },
+            "filter": [
+                "all"
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "source": "satellite",
+            "minzoom": 0
+        }
+    ]
+}
